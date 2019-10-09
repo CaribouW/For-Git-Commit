@@ -1,0 +1,11 @@
+BeautifulSoup4
+scrapy
+scrapy_redis
+redis
+pymysql
+requests
+pandas
+sqlalchemy
+tensorflow
+keras
+numpy
