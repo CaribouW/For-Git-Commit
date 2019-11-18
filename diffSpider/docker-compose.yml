@@ -1,0 +1,11 @@
+version: '2'
+services:
+  gitspider:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./download:/download
+      - ./result:/result
+
+

@@ -2,3 +2,5 @@
 *.iml
 *.csv
 /generator/gendiff/download/
+download/
+model/download/
