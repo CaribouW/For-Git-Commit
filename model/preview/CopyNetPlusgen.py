@@ -52,7 +52,7 @@ PC = 2                          # patience
 BM_S = 2                        # beam size
 VER = 12                        # data version
 
-
+# 这里是获取模型 , 并且进行训练的逻辑
 def train():
     dataset = Data4CopynetV3()
     dataset.load_data(VER)
@@ -77,7 +77,7 @@ def predict():
     wi, _ = dataset.get_word2index()
     iw = {k: v for v, k in wi.items()}
     # f1 = open('reference1.msg', 'w')
-    f2 = open('CopyNetPlusWED150HS16_1.gen', 'w')                 
+    f2 = open('CopyNetPlusWED150HS16_1.gen', 'w')
     lemmatization = json.load(open('lemmatization.json'))
     for i, j, k, l, m, n in zip(t1, t2, diff, msg, va, t3):
         variable = {k: v for v, k in m.items()}
@@ -144,5 +144,5 @@ def list2sentence(seq, index2word, variable):
 
 
 if __name__ == '__main__':
-    train()        
+    train()
     predict()

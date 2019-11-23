@@ -4,3 +4,4 @@
 /generator/gendiff/download/
 download/
 model/download/
+model/kerasDemos/*.csv

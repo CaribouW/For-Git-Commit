@@ -1,12 +1,12 @@
-from keras import Model
-from keras.layers import Input, Embedding, Bidirectional, GRU, Dense, TimeDistributed, Concatenate, Lambda, Add
-from keras.layers import RepeatVector, Reshape, Dropout
 import keras.backend as K
-from keras.utils import np_utils
 import numpy as np
-from attention import Masked, MaskedTimeAttentionWithCoverage, MaskedGlobalMaxPooling1D, MaskedGlobalAveragePooling1D
-from defined_layers import GetPiece, AttentionCopy, CombineGenCopy, MaskedSoftmax, ComputeAlpha, WeightedSum
-from defined_layers import MaskedConv2D, MaskedAveragePooling2D, ComputeAttention, MaskedCopyProb
+from keras import Model
+from keras.layers import Dropout
+from keras.layers import Input, Embedding, Bidirectional, GRU, Dense, TimeDistributed, Concatenate, Lambda
+
+from attention import Masked
+from defined_layers import AttentionCopy, CombineGenCopy, MaskedSoftmax
+from defined_layers import ComputeAttention, MaskedCopyProb
 
 
 def CopyNetPlus(len_en, len_de, attr_num, embed_vocab_size, decode_vocab_size, m_embed_dim, w_embed_dim,
