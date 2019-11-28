@@ -5,3 +5,5 @@
 download/
 model/download/
 model/kerasDemos/*.csv
+/model/git-commit-NMT/download.tar.gz
+/model/git-commit-NMT/download
