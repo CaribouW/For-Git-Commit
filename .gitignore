@@ -2,4 +2,8 @@
 *.iml
 *.csv
 /generator/gendiff/download/
-model/git-commit-NMT/download
+download/
+model/download/
+model/kerasDemos/*.csv
+/model/git-commit-NMT/download.tar.gz
+/model/git-commit-NMT/download
