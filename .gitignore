@@ -2,3 +2,4 @@
 *.iml
 *.csv
 /generator/gendiff/download/
+model/git-commit-NMT/download
